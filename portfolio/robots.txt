@@ -1,0 +1,21 @@
+# Block OpenAI
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+
+#Block Google AI 
+User-agent: Google-Extended
+Disallow: /
+
+#Block commoncrawl
+User-agent: CCBot
+Disallow: /
+
+#Block Anthropic AI
+User-agent: anthropic-ai
+Disallow: /
+‍User-agent: Claude-Web
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
