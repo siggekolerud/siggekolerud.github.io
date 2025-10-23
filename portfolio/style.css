@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: linear-gradient(to right, lightblue 50%, turquoise);
+    background-image: linear-gradient(to right, lightblue, cyan);
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.titels {
+.titles {
     text-align: center;
      font-size: large;
 }
@@ -16,7 +16,8 @@
 header {
     background-color: white;
     border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;  
+    border-bottom-right-radius: 50px;
+      box-shadow: 0 4px 8px rgba(26, 198, 221, 0.712);  
 }
 
 .header-text {
@@ -30,6 +31,11 @@ header {
     max-width: 500px;
     padding: 0 20px;
     border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(26, 198, 221, 0.712);
+}
+
+.about:hover {
+    transform: scale(1.02);
 }
 
 .projects {
@@ -39,15 +45,29 @@ header {
     background-color: white;
     border-radius: 40px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(26, 198, 221, 0.712);
 }
 
 .projects:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.project-image {
+    width: 95%;
+    height: auto;
+    border-radius: 40px;
+    object-fit: cover;
+    max-height: 250px;
+    padding-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
     transform: scale(1.02);
 }
 
 
-.project-grid{
+.grid{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -56,15 +76,15 @@ header {
     padding-bottom: 10px;
 }
 
-.project-card{
+.card{
     background-color: white;
     border-radius: 40px;
     max-width: 500px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 4px 8px 1px rgba(26, 198, 221, 0.712);
     transition: transform 0.2s;
 }
 
-.project-card:hover {
+.card:hover {
     transform: scale(1.05);
 
 }
