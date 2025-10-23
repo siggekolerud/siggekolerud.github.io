@@ -1,2 +1,2 @@
 # Portfolio-Sigge-Kolerud
-Link to portfolio: https://tyranidtechsupport.github.io/Portfolio-Sigge-Kolerud/portfolio/
+Portfolio is up on: https://siggekolerud.github.io/portfolio/
