@@ -10,7 +10,7 @@
 
 .titles {
     text-align: center;
-     font-size: large;
+     font-family: 'Arial', sans-serif;
 }
 
 header {
@@ -20,10 +20,49 @@ header {
       box-shadow: 0 4px 8px rgba(26, 198, 221, 0.712);  
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px; 
+    flex-wrap: wrap;
+}
+
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(26, 198, 221, 0.712);
+}
+
 .header-text {
     text-align: center;
 }
 
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.github-link img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+    }
+    .header-text, .github-link {
+        text-align: center; 
+        justify-content: center;
+    }
+}
 
 .about {
     background-color: white;
@@ -31,7 +70,8 @@ header {
     max-width: 500px;
     padding: 0 20px;
     border-radius: 50px;
-      box-shadow: 0 4px 8px rgba(26, 198, 221, 0.712);
+    box-shadow: 0 4px 8px rgba(26, 198, 221, 0.712);
+    font-family: 'Arial', sans-serif;
 }
 
 .about:hover {
@@ -46,6 +86,7 @@ header {
     border-radius: 40px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(26, 198, 221, 0.712);
+    font-family: 'Arial', sans-serif;
 }
 
 .projects:hover {
@@ -76,8 +117,49 @@ header {
     padding-bottom: 10px;
 }
 
+.skills
+{
+    margin: 45px auto;
+    max-width: 500px;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(26, 198, 221, 0.712);
+}
+
+.skills-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(26, 198, 221, 0.712);
+    transition: transform 0.2s;
+    font-family: 'Arial', sans-serif;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+}
+
+.svg{
+    width: 40px;
+    height: auto;
+    margin: 10px;
+}
+
 .card{
     background-color: white;
+    padding: 10px;
     border-radius: 40px;
     max-width: 500px;
     box-shadow: 1px 4px 8px 1px rgba(26, 198, 221, 0.712);
@@ -113,19 +195,10 @@ footer {
 
 footer p {
     margin: 0;
-}
-
-footer a.Link {
-    margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 .contact-info {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.contact-info-link{
     text-decoration: none;
     color: black;
     font-weight: bold;
