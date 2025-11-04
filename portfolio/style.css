@@ -201,12 +201,8 @@ footer p {
 .contact-info {
     text-decoration: none;
     color: black;
+    font-family: Arial, sans-serif;
     font-weight: bold;
-}
-
-.contact-info-link:hover {
-    text-decoration: underline;
-    font-size: medium;
 }
 
 @media (max-width: 360px) {
